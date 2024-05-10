@@ -33,72 +33,30 @@
             </div>       
         </header> -->
 
+        <!-- Menú: hecho con bootstrap + css -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse px-lg-3" id="navbarTogglerDemo01">
-              <div class="d-flex justify-content-lg-between w-100">
-                <a class="navbar-brand d-none d-md-block fw-bold border-bottom fw-bold">Logo</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <div class="collapse navbar-collapse px-lg-3>" id="navbarTogglerDemo01">
+              <div class="d-flex justify-content-lg-between align-items-center w-100">
+                <a class="navbar-brand d-none d-md-block logo">Logo</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0  h-100">
                     <li class="nav-item">
-                    <a class="nav-link fw-bold">Sign in</a>
+                         <a class="nav-link a-nav">Sign in</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#" id="sign-up-link">Sign up</a>
+                        <a class="nav-link a-nav" href="#" id="sign-up-link">Sign up</a>
                     </li>
                 </ul>
               </div>
-              
             </div>
-          </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
+        </nav>                
         <main>
             <div>
                 <img class="img-fluid" src="./public/src/assets/background-image-web.png" alt="Main-picture" class="main-image">
             </div>
-           
-            
             <form class="sign-up-form">
-                
                 <div class="create-account-container">
                     <p class="create-account">Create Account</p>
                     <i class="bi bi-x-lg"></i>
@@ -148,14 +106,20 @@
 
                 <!-- Condiciones: tipo check-->
                 <div class="form-input-checkbox">
-                    <label for="conditions">Agree with <span class="styles-terms-and-conditions">Terms & Conditions</span></label>
+                    <label for="conditions">Agree with
+                         <span class="styles-terms-and-conditions">Terms & Conditions</span>
+                    </label>
                     <input type="checkbox" id="conditions" name="conditions" title="Terms & Conditions">
                 </div>
 
                 <button type=submit class="send">CREATE ACCOUNT</button>
 
                 <div class="already-have-account">
-                    <p>Already have an account? <span>Login to Account</span></p>
+                    <p>Already have an account? 
+                        <span>
+                            <a href="#">Login to Account</a>
+                        </span>
+                    </p>
                 </div>       
             </form>
             <div class="backdrop" id="backdrop"></div>
