@@ -8,10 +8,6 @@
     --color-link-blue: hsla(213, 93%, 47%, 0.64);
 }
 
-/* * {
-    border: solid 1px;
-} */
-
 body {    
     /* Quitar el scroll lateral: */
     overflow-x: hidden;
@@ -28,23 +24,23 @@ header.data-sidebar-open{
     justify-content: space-between;
 }
 
-/* Estilos del logo */
-a.logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
 /* Menú en desktop-tablet (por defecto).*/
 nav.main-menu {
     display: flex;
     gap: 2rem;
 }
 
-/* Configuración estilos de los enlaces.*/
+/* Estilos del logo */
+a.logo {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+/* Configuración estilos de los enlaces (menú).*/
 a.a-nav {
     font-weight: 500;
     font-size: 1rem;
-    padding: 0.2rem;
+    padding: 0.4rem;
     text-decoration: none;
     color: var(--color-primary-black)
 }
@@ -53,11 +49,24 @@ a.a-nav:hover {
     color: rgb(89, 89, 89);
 }
 
-/* Subrayado enlace de registro */
-nav.main-menu a:last-child {
-    border-bottom: var(--color-link-blue) solid 2.5px;
-    padding-bottom: 0.2rem;
-    background-color: red;
+.sign-up {
+    margin-bottom: 0.6rem;
+    padding: 0.4rem;
+    font-weight: 800;
+    font-size: 1rem;
+    
+    background-color: var(--color-primary-blue);
+    color: var(--color-grey-form) !important;
+    
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 1px 1px 10px 1px var(--color-primary-blue);
+
+}
+
+/* Menú hamburgusa (icono) */
+.navbar-toggler {
+    font-size: 0.8rem;
 }
 
 /* Imagen principal */
@@ -74,7 +83,7 @@ form.sign-up-form {
     background-color: var(--color-grey-form);
     padding: 2.5rem 10rem;
     width: 95%;
-    margin-top: 7.5rem;
+    margin-top: 4rem;
     border-radius: 20px;
      
     display: flex;
@@ -260,10 +269,29 @@ button.send {
     border-radius: 10px;
 }
 
+/* Credits */
+.credits {
+    font-size: 0.5rem;
+}
+
+/* Animación del botón sign-up */
+@keyframes flash {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.flash {
+    animation: flash 1.5s 3 alternate;
+}
+
+/* Comportamiento desktop */
 @media (min-width: 768px) {
 
     form.sign-up-form {
         width: 50%;
+        margin-top: 6rem;
     }
+
 }
 
