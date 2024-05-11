@@ -282,7 +282,7 @@ button.send {
 }
 
 .flash {
-    animation: flash 1.5s 3 alternate;
+    animation: flash 1.5s 5 alternate;
 }
 
 /* Comportamiento desktop */
